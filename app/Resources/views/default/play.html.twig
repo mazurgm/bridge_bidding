@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bidding competition{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <h4>North's hand:</h4>
+
+            {% for card_type in North_hand %}
+                <!-- <li>{{ dump(card_type) }}</li>-->
+                {% for cards in card_type %}
+
+                    <img style="height: 12%; width: 12%" src="{{ cards[4] }}" alt="" />
+
+                {% endfor %}
+                <br />
+            {% endfor %}
+
+        </div>
+        <div class="col-sm-4">.</div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>East's hand:</h4>
+
+            {% for card_type in East_hand %}
+                <!-- <li>{{ dump(card_type) }}</li>-->
+                {% for cards in card_type %}
+
+                    <img style="height: 12%; width: 12%" src="{{ cards[4] }}" alt="" />
+
+                {% endfor %}
+                <br />
+            {% endfor %}
+        </div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+
+            <h4>West's hand:</h4>
+
+            {% for card_type in West_hand %}
+                <!-- <li>{{ dump(card_type) }}</li>-->
+                {% for cards in card_type %}
+
+                    <img style="height: 12%; width: 12%" src="{{ cards[4] }}" alt="" />
+
+                {% endfor %}
+                <br />
+            {% endfor %}
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <h4>South's hand:</h4>
+
+            {% for card_type in South_hand %}
+                <!-- <li>{{ dump(card_type) }}</li>-->
+                {% for cards in card_type %}
+
+                    <img style="height: 12%; width: 12%" src="{{ cards[4] }}" alt="" />
+
+                {% endfor %}
+                <br />
+            {% endfor %}
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+
+
+{% endblock %}
