@@ -1,0 +1,312 @@
+-
+    - Spade
+    - A
+    - 13
+    - 14
+    - images/ace_of_spades2.png
+-
+    - Spade
+    - K
+    - 12
+    - 13
+    - images/king_of_spades2.png
+-
+    - Spade
+    - Q
+    - 11
+    - 12
+    - images/queen_of_spades2.png
+-
+    - Spade
+    - J
+    - 10
+    - 11
+    - images/jack_of_spades2.png
+-
+    - Spade
+    - '10'
+    - 9
+    - 10
+    - images/10_of_spades.png
+-
+    - Spade
+    - '9'
+    - 8
+    - 9
+    - images/9_of_spades.png
+-
+    - Spade
+    - '8'
+    - 7
+    - 8
+    - images/8_of_spades.png
+-
+    - Spade
+    - '7'
+    - 6
+    - 7
+    - images/7_of_spades.png
+-
+    - Spade
+    - '6'
+    - 5
+    - 6
+    - images/6_of_spades.png
+-
+    - Spade
+    - '5'
+    - 4
+    - 5
+    - images/5_of_spades.png
+-
+    - Spade
+    - '4'
+    - 3
+    - 4
+    - images/4_of_spades.png
+-
+    - Spade
+    - '3'
+    - 2
+    - 3
+    - images/3_of_spades.png
+-
+    - Spade
+    - '2'
+    - 1
+    - 2
+    - images/2_of_spades.png
+-
+    - Heart
+    - A
+    - 13
+    - 14
+    - images/ace_of_hearts2.png
+-
+    - Heart
+    - K
+    - 12
+    - 13
+    - images/king_of_hearts2.png
+-
+    - Heart
+    - Q
+    - 11
+    - 12
+    - images/queen_of_hearts2.png
+-
+    - Heart
+    - J
+    - 10
+    - 11
+    - images/jack_of_hearts2.png
+-
+    - Heart
+    - '10'
+    - 9
+    - 10
+    - images/10_of_hearts.png
+-
+    - Heart
+    - '9'
+    - 8
+    - 9
+    - images/9_of_hearts.png
+-
+    - Heart
+    - '8'
+    - 7
+    - 8
+    - images/8_of_hearts.png
+-
+    - Heart
+    - '7'
+    - 6
+    - 7
+    - images/7_of_hearts.png
+-
+    - Heart
+    - '6'
+    - 5
+    - 6
+    - images/6_of_hearts.png
+-
+    - Heart
+    - '5'
+    - 4
+    - 5
+    - images/5_of_hearts.png
+-
+    - Heart
+    - '4'
+    - 3
+    - 4
+    - images/4_of_hearts.png
+-
+    - Heart
+    - '3'
+    - 2
+    - 3
+    - images/3_of_hearts.png
+-
+    - Heart
+    - '2'
+    - 1
+    - 2
+    - images/2_of_hearts.png
+-
+    - Diamond
+    - A
+    - 13
+    - 14
+    - images/ace_of_diamonds2.png
+-
+    - Diamond
+    - K
+    - 12
+    - 13
+    - images/king_of_diamonds2.png
+-
+    - Diamond
+    - Q
+    - 11
+    - 12
+    - images/queen_of_diamonds2.png
+-
+    - Diamond
+    - J
+    - 10
+    - 11
+    - images/jack_of_diamonds2.png
+-
+    - Diamond
+    - '10'
+    - 9
+    - 10
+    - images/10_of_diamonds.png
+-
+    - Diamond
+    - '9'
+    - 8
+    - 9
+    - images/9_of_diamonds.png
+-
+    - Diamond
+    - '8'
+    - 7
+    - 8
+    - images/8_of_diamonds.png
+-
+    - Diamond
+    - '7'
+    - 6
+    - 7
+    - images/7_of_diamonds.png
+-
+    - Diamond
+    - '6'
+    - 5
+    - 6
+    - images/6_of_diamonds.png
+-
+    - Diamond
+    - '5'
+    - 4
+    - 5
+    - images/5_of_diamonds.png
+-
+    - Diamond
+    - '4'
+    - 3
+    - 4
+    - images/4_of_diamonds.png
+-
+    - Diamond
+    - '3'
+    - 2
+    - 3
+    - images/3_of_diamonds.png
+-
+    - Diamond
+    - '2'
+    - 1
+    - 2
+    - images/2_of_diamonds.png
+-
+    - Club
+    - A
+    - 13
+    - 14
+    - images/ace_of_clubs2.png
+-
+    - Club
+    - K
+    - 12
+    - 13
+    - images/king_of_clubs2.png
+-
+    - Club
+    - Q
+    - 11
+    - 12
+    - images/queen_of_clubs2.png
+-
+    - Club
+    - J
+    - 10
+    - 11
+    - images/jack_of_clubs2.png
+-
+    - Club
+    - '10'
+    - 9
+    - 10
+    - images/10_of_clubs.png
+-
+    - Club
+    - '9'
+    - 8
+    - 9
+    - images/9_of_clubs.png
+-
+    - Club
+    - '8'
+    - 7
+    - 8
+    - images/8_of_clubs.png
+-
+    - Club
+    - '7'
+    - 6
+    - 7
+    - images/7_of_clubs.png
+-
+    - Club
+    - '6'
+    - 5
+    - 6
+    - images/6_of_clubs.png
+-
+    - Club
+    - '5'
+    - 4
+    - 5
+    - images/5_of_clubs.png
+-
+    - Club
+    - '4'
+    - 3
+    - 4
+    - images/4_of_clubs.png
+-
+    - Club
+    - '3'
+    - 2
+    - 3
+    - images/3_of_clubs.png
+-
+    - Club
+    - '2'
+    - 1
+    - 2
+    - images/2_of_clubs.png

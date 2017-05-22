@@ -6,6 +6,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Classes\Cards;
+use Symfony\Component\Yaml\Yaml;
 
 class DefaultController extends Controller
 {
@@ -53,6 +54,11 @@ class DefaultController extends Controller
 
         $cards = new Cards();
         //var_dump($cards->getDeck());
+
+        //file_put_contents('../src/AppBundle/Resources/Config/cards.yml', Yaml::dump($cards->getDeck()));
+        //file_get_contents('../src/AppBundle/Resources/Config/cards.yml');
+       // echo $this->get('kernel')->getRootDir();
+
         $cards->shuffleDeck();
         $cards->distributeCards();
 

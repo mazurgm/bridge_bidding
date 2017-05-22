@@ -3,6 +3,7 @@
 // src/AppBundle/Classes/Cards.php
 
 namespace AppBundle\Classes;
+use Symfony\Component\Yaml\Yaml;
 
 
 class Cards
@@ -77,6 +78,7 @@ class Cards
            array("Club", '2' , 1, 2, 'images/2_of_clubs.png'),
 
        );
+
     }
 
     /**
