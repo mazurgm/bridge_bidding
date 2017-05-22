@@ -34,7 +34,7 @@ class Cards
            array("Spade", '3' , 2, 3, 'images/3_of_spades.png'),
            array("Spade", '2' , 1, 2, 'images/2_of_spades.png'),
 
-           array("Heart", 'A', 13, 14, 'images/ace_of_hearts2.png'),
+           array("Heart", 'A', 13, 14, 'images/ace_of_hearts.png'),
            array("Heart", 'K', 12, 13, 'images/king_of_hearts2.png'),
            array("Heart", 'Q', 11, 12, 'images/queen_of_hearts2.png'),
            array("Heart", 'J', 10, 11, 'images/jack_of_hearts2.png'),
@@ -49,7 +49,7 @@ class Cards
            array("Heart", '2' , 1, 2, 'images/2_of_hearts.png'),
 
 
-           array("Diamond", 'A', 13, 14, 'images/ace_of_diamonds2.png'),
+           array("Diamond", 'A', 13, 14, 'images/ace_of_diamonds.png'),
            array("Diamond", 'K', 12, 13, 'images/king_of_diamonds2.png'),
            array("Diamond", 'Q', 11, 12, 'images/queen_of_diamonds2.png'),
            array("Diamond", 'J', 10, 11, 'images/jack_of_diamonds2.png'),
@@ -63,7 +63,7 @@ class Cards
            array("Diamond", '3' , 2, 3, 'images/3_of_diamonds.png'),
            array("Diamond", '2' , 1, 2, 'images/2_of_diamonds.png'),
 
-           array("Club", 'A', 13, 14, 'images/ace_of_clubs2.png'),
+           array("Club", 'A', 13, 14, 'images/ace_of_clubs.png'),
            array("Club", 'K', 12, 13, 'images/king_of_clubs2.png'),
            array("Club", 'Q', 11, 12, 'images/queen_of_clubs2.png'),
            array("Club", 'J', 10, 11, 'images/jack_of_clubs2.png'),

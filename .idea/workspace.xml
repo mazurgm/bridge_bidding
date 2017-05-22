@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24ba92ae-15b6-420d-8b2b-3333d3a7f067" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/Config/cards.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Services/Card.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Services/Deck.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/play.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/play.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Classes/Cards.php" afterPath="$PROJECT_DIR$/src/AppBundle/Classes/Cards.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/Config/cards.yml" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/Config/cards.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +20,8 @@
       <file leaf-file-name="Cards.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Classes/Cards.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1440">
-              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="432">
+              <caret line="36" column="60" lean-forward="false" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -39,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cards.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cards.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/Config/cards.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1296">
+            <state relative-caret-position="-1080">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -59,11 +57,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="services.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="play.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/default/play.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+            <state relative-caret-position="396">
+              <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -83,13 +91,13 @@
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
-              <caret line="57" column="10" lean-forward="false" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
+              <caret line="57" column="8" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
               <folding>
                 <element signature="e#40#99#0#PHP" expanded="true" />
-                <marker date="1495451629787" expanded="true" signature="1758:1830" ph="..." />
-                <marker date="1495451629787" expanded="true" signature="1894:1965" ph="..." />
-                <marker date="1495451629787" expanded="true" signature="2030:2102" ph="..." />
-                <marker date="1495451629787" expanded="true" signature="2166:2237" ph="..." />
+                <marker date="1495452366416" expanded="true" signature="1756:1828" ph="..." />
+                <marker date="1495452366416" expanded="true" signature="1892:1963" ph="..." />
+                <marker date="1495452366416" expanded="true" signature="2028:2100" ph="..." />
+                <marker date="1495452366416" expanded="true" signature="2164:2235" ph="..." />
               </folding>
             </state>
           </provider>
@@ -113,9 +121,9 @@
         <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/views/default/play.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Services/Card.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Services/Deck.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/play.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Classes/Cards.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/Config/cards.yml" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
@@ -130,8 +138,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="767" />
-    <option name="y" value="590" />
+    <option name="x" value="305" />
+    <option name="y" value="147" />
     <option name="width" value="1653" />
     <option name="height" value="916" />
   </component>
@@ -287,6 +295,38 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bridge_bidding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bridge_bidding" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bridge_bidding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bridge_bidding" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -397,15 +437,15 @@
       <workItem from="1495032189231" duration="6926000" />
       <workItem from="1495116727421" duration="6077000" />
       <workItem from="1495206062937" duration="177000" />
-      <workItem from="1495449238975" duration="2420000" />
+      <workItem from="1495449238975" duration="3165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26207000" />
+    <option name="totallyTimeSpent" value="26952000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="767" y="590" width="1653" height="916" extended-state="1" />
+    <frame x="305" y="147" width="1653" height="916" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21173623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -438,13 +478,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Resetting/reset.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -465,10 +498,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#99#0#PHP" expanded="true" />
-            <marker date="1495451629787" expanded="true" signature="1758:1830" ph="..." />
-            <marker date="1495451629787" expanded="true" signature="1894:1965" ph="..." />
-            <marker date="1495451629787" expanded="true" signature="2030:2102" ph="..." />
-            <marker date="1495451629787" expanded="true" signature="2166:2237" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="1756:1828" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="1892:1963" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="2028:2100" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="2164:2235" ph="..." />
           </folding>
         </state>
       </provider>
@@ -529,10 +562,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#99#0#PHP" expanded="true" />
-            <marker date="1495451629787" expanded="true" signature="1758:1830" ph="..." />
-            <marker date="1495451629787" expanded="true" signature="1894:1965" ph="..." />
-            <marker date="1495451629787" expanded="true" signature="2030:2102" ph="..." />
-            <marker date="1495451629787" expanded="true" signature="2166:2237" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="1756:1828" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="1892:1963" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="2028:2100" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="2164:2235" ph="..." />
           </folding>
         </state>
       </provider>
@@ -550,10 +583,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#99#0#PHP" expanded="true" />
-            <marker date="1495451629787" expanded="true" signature="1758:1830" ph="..." />
-            <marker date="1495451629787" expanded="true" signature="1894:1965" ph="..." />
-            <marker date="1495451629787" expanded="true" signature="2030:2102" ph="..." />
-            <marker date="1495451629787" expanded="true" signature="2166:2237" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="1756:1828" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="1892:1963" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="2028:2100" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="2164:2235" ph="..." />
           </folding>
         </state>
       </provider>
@@ -776,16 +809,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/default/play.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Services/Deck.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="396">
+          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -800,8 +825,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Classes/Cards.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1440">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state relative-caret-position="432">
+          <caret line="36" column="60" lean-forward="false" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
           <folding />
         </state>
       </provider>
@@ -809,20 +834,36 @@
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="57" column="10" lean-forward="false" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
+          <caret line="57" column="8" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
           <folding>
             <element signature="e#40#99#0#PHP" expanded="true" />
-            <marker date="1495451629787" expanded="true" signature="1758:1830" ph="..." />
-            <marker date="1495451629787" expanded="true" signature="1894:1965" ph="..." />
-            <marker date="1495451629787" expanded="true" signature="2030:2102" ph="..." />
-            <marker date="1495451629787" expanded="true" signature="2166:2237" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="1756:1828" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="1892:1963" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="2028:2100" ph="..." />
+            <marker date="1495452366416" expanded="true" signature="2164:2235" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/Config/cards.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1296">
+        <state relative-caret-position="-1080">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Services/Deck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
