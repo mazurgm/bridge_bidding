@@ -6,6 +6,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Classes\Cards;
+use AppBundle\Services\Deck;
 use Symfony\Component\Yaml\Yaml;
 
 class DefaultController extends Controller
@@ -52,38 +53,22 @@ class DefaultController extends Controller
     public function playAction(Request $request)
     {
 
+        //test
+        $deck = $this->container->get('Deck');
+        //$deck = new Deck();
+
+        //end of test
+
         $cards = new Cards();
         //var_dump($cards->getDeck());
 
-        file_put_contents('../src/AppBundle/Resources/Config/cards.yml', Yaml::dump($cards->getDeck()));
+        //file_put_contents('../src/AppBundle/Resources/Config/cards.yml', Yaml::dump($cards->getDeck()));
         //file_get_contents('../src/AppBundle/Resources/Config/cards.yml');
-       // echo $this->get('kernel')->getRootDir();
+        // echo $this->get('kernel')->getRootDir();
 
         $cards->shuffleDeck();
         $cards->distributeCards();
 
-        /*
-        echo "Karty gracza North:<br />";
-        echo "<pre>";
-        var_dump($cards->getNorthPlayerCards());
-        echo "</pre>";
-
-        echo "Karty gracza East:<br />";
-        echo "<pre>";
-        var_dump($cards->getEastPlayerCards());
-        echo "</pre>";
-
-        echo "Karty gracza South:<br />";
-        echo "<pre>";
-        var_dump($cards->getSouthPlayerCards());
-        echo "</pre>";
-
-        echo "Karty gracza West:<br />";
-        echo "<pre>";
-        var_dump($cards->getWestPlayerCards());
-        echo "</pre>";
-
-        */
 
         return $this->render('default/play.html.twig', array(
             'North_hand' => $cards->getNorthPlayerCards(),
