@@ -25,9 +25,9 @@
 
     <div class="row">
         <div class="col-sm-4">
-            <h4>East's hand:</h4>
+            <h4>West's hand:</h4>
 
-            {% for card_type in East_hand %}
+            {% for card_type in West_hand %}
                 <!-- <li>{{ dump(card_type) }}</li>-->
                 {% for cards in card_type %}
 
@@ -40,9 +40,9 @@
         <div class="col-sm-4"></div>
         <div class="col-sm-4">
 
-            <h4>West's hand:</h4>
+            <h4>East's hand:</h4>
 
-            {% for card_type in West_hand %}
+            {% for card_type in East_hand %}
                 <!-- <li>{{ dump(card_type) }}</li>-->
                 {% for cards in card_type %}
 
