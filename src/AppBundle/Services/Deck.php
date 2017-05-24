@@ -9,20 +9,13 @@ use Symfony\Component\Yaml\Yaml;
 
 class Deck implements \Iterator
 {
-    private $link_to_the_list_of_cards;
-    private $cardsArray = array();
     private $deck = array();
 
     public function __construct($link_to_the_list_of_cards)
     {
-        $this->link_to_the_list_of_cards = $link_to_the_list_of_cards;
-    }
+        $cardsArray = Yaml::parse(file_get_contents($link_to_the_list_of_cards));
 
-    public function generateDeck()
-    {
-        $this->cardsArray = Yaml::parse(file_get_contents($this->link_to_the_list_of_cards));
-
-        foreach ($this->cardsArray as $card)
+        foreach ($cardsArray as $card)
         {
             $this->deck[] = new Card($card[0],$card[1],$card[2],$card[3],$card[4]);
         }
@@ -30,7 +23,6 @@ class Deck implements \Iterator
 
     public function shuffleDeck()
     {
-        //won't work
         return shuffle($this->deck);
     }
 

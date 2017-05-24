@@ -55,9 +55,7 @@ class DefaultController extends Controller
 
         //test
         $deck = $this->container->get('Deck');
-        $deck->generateDeck();
-        //$deck->shuffleDeck();
-
+        $deck->shuffleDeck();
         echo "<pre>";
         var_dump($deck);
         echo "</pre>";
