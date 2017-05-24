@@ -7,6 +7,9 @@ services:
     Card:
         class: AppBundle\Services\Card
         arguments: []
-    Deck:
-        class: AppBundle\Services\Deck
+    DeckGenerator:
+        class: AppBundle\Services\DeckGenerator
         arguments: ['../src/AppBundle/Resources/Config/cards.yml']
+    HandsGenerator:
+        class: AppBundle\Services\HandsGenerator
+        arguments: ['@DeckGenerator']

@@ -1,13 +1,11 @@
 <?php
 
-// src/AppBundle/Services/Deck.php
+// src/AppBundle/Services/DeckGenerator.php
 
 namespace AppBundle\Services;
 use Symfony\Component\Yaml\Yaml;
-//use AppBundle\Services\Card;
 
-
-class Deck implements \Iterator
+class DeckGenerator implements \Iterator
 {
     private $deck = array();
 
