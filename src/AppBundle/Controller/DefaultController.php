@@ -52,12 +52,13 @@ class DefaultController extends Controller
     public function playAction(Request $request)
     {
 
-        $deck = $this->container->get('DeckGenerator');
-        $deck->shuffleDeck();
+        //$deck = $this->container->get('DeckGenerator');
+        //$deck->shuffleDeck();
 
         $hands = $this->container->get('HandsGenerator');
 
         $cards = new Cards();
+
         //var_dump($cards->getDeck());
 
         //file_put_contents('../src/AppBundle/Resources/Config/cards.yml', Yaml::dump($cards->getDeck()));

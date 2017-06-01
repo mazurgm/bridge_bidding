@@ -5,7 +5,7 @@
 namespace AppBundle\Services;
 
 
-class HandsGenerator
+class HandsGenerator implements \Iterator
 {
     private $deck = array();
     private $distributedCards;
@@ -17,14 +17,22 @@ class HandsGenerator
     public function __construct($deck)
     {
         $this->deck = $deck;
-
-        echo "<pre>";
-        var_dump($this->deck);
-        echo "</pre>";
+        
     }
 
     public function distributeCards()
     {
+        //echo "<pre>";
+       // var_dump($this->deck);
+       // echo "</pre>";
+        $it = new Test;
+
+        foreach($it as $key => $value) {
+            echo "<pre>";
+            var_dump($key, $value);
+            echo "</pre>";
+            echo "\n";
+        }
 
     }
 
@@ -58,6 +66,62 @@ class HandsGenerator
     public function getWestPlayerCards()
     {
         return $this->westPlayerCards;
+    }
+
+    /**
+     * Return the current element
+     * @return mixed Can return any type.
+     */
+    public function current()
+    {
+        $deck = current($this->deck);
+        echo "current: $deck\n";
+        return $deck;
+    }
+
+    /**
+     * Move forward to next element
+     * @return void Any returned value is ignored.
+     */
+    public function next()
+    {
+        $deck = next($this->deck);
+        echo "next: $deck\n";
+        return $deck;
+    }
+
+    /**
+     * Return the key of the current element
+     * @return mixed scalar on success, or null on failure.
+     */
+    public function key()
+    {
+        $deck = key($this->deck);
+        echo "key: $deck\n";
+        return $deck;
+    }
+
+    /**
+     * Checks if current position is valid
+     * @return boolean The return value will be casted to boolean and then evaluated.
+     * Returns true on success or false on failure.
+     */
+    public function valid()
+    {
+        $key = key($this->deck);
+        $deck = ($key !== NULL && $key !== FALSE);
+        echo "valid: $deck\n";
+        return $deck;
+    }
+
+    /**
+     * Rewind the Iterator to the first element
+     * @return void Any returned value is ignored.
+     */
+    public function rewind()
+    {
+        echo "rewinding\n";
+        reset($this->deck);
     }
 
 }

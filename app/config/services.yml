@@ -10,6 +10,13 @@ services:
     DeckGenerator:
         class: AppBundle\Services\DeckGenerator
         arguments: ['../src/AppBundle/Resources/Config/cards.yml']
+        calls:
+            - method: shuffleDeck
     HandsGenerator:
         class: AppBundle\Services\HandsGenerator
         arguments: ['@DeckGenerator']
+        calls:
+            - method: distributeCards
+    Table:
+        class: AppBundle\Services\Table
+        arguments: []
