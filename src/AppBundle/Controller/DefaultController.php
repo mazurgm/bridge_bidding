@@ -53,24 +53,12 @@ class DefaultController extends Controller
     {
 
         $hands = $this->container->get('HandsGenerator');
-
-        $cards = new Cards();
-
-        //var_dump($cards->getDeck());
-
-        //file_put_contents('../src/AppBundle/Resources/Config/cards.yml', Yaml::dump($cards->getDeck()));
-        //file_get_contents('../src/AppBundle/Resources/Config/cards.yml');
-        // echo $this->get('kernel')->getRootDir();
-
-        $cards->shuffleDeck();
-        $cards->distributeCards();
-
-
+        
         return $this->render('default/play.html.twig', array(
-            'North_hand' => $cards->getNorthPlayerCards(),
-            'East_hand' => $cards->getEastPlayerCards(),
-            'South_hand' => $cards->getSouthPlayerCards(),
-            'West_hand' => $cards->getWestPlayerCards(),
+            'North_hand' => $hands->getNorthPlayerCards(),
+            'East_hand' => $hands->getEastPlayerCards(),
+            'South_hand' => $hands->getSouthPlayerCards(),
+            'West_hand' => $hands->getWestPlayerCards(),
 
         ));
 

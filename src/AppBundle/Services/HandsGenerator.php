@@ -41,22 +41,6 @@ class HandsGenerator
 
         }
 
-        echo "<pre>North";
-        var_dump($this->northPlayerCards);
-        echo "</pre>";
-
-        echo "<pre>East";
-        var_dump($this->eastPlayerCards);
-        echo "</pre>";
-
-        echo "<pre>South";
-        var_dump($this->southPlayerCards);
-        echo "</pre>";
-
-        echo "<pre>West";
-        var_dump($this->westPlayerCards);
-        echo "</pre>";
-
     }
 
     /**
@@ -64,7 +48,7 @@ class HandsGenerator
      */
     public function getNorthPlayerCards()
     {
-        return $this->northPlayerCards;
+        return $this->splitCards($this->northPlayerCards);
     }
 
     /**
@@ -72,7 +56,7 @@ class HandsGenerator
      */
     public function getEastPlayerCards()
     {
-        return $this->eastPlayerCards;
+        return $this->splitCards($this->eastPlayerCards);
     }
 
     /**
@@ -80,7 +64,7 @@ class HandsGenerator
      */
     public function getSouthPlayerCards()
     {
-        return $this->southPlayerCards;
+        return $this->splitCards($this->southPlayerCards);
     }
 
     /**
@@ -88,10 +72,10 @@ class HandsGenerator
      */
     public function getWestPlayerCards()
     {
-        return $this->westPlayerCards;
+        return $this->splitCards($this->westPlayerCards);
     }
 
-    private function sortCards($hand)
+    private function splitCards($hand)
     {
         $spades = array();
         $hearts = array();
@@ -108,7 +92,7 @@ class HandsGenerator
         foreach ($hand as $value){
 
 
-            switch ($value[0]) {
+            switch ($value->color) {
                 case "Spade":
                     array_push($spades, $value);
                     break;
@@ -127,30 +111,24 @@ class HandsGenerator
 
         }
 
-        usort($spades, function($a, $b) {
-            return $b[2] <=> $a[2];
-        });
 
-        usort($hearts, function($a, $b) {
-            return $b[2] <=> $a[2];
-        });
-
-        usort($diamonds, function($a, $b) {
-            return $b[2] <=> $a[2];
-        });
-
-        usort($clubs, function($a, $b) {
-            return $b[2] <=> $a[2];
-        });
-
-        $sorted_hand['Spades'] = $spades;
-        $sorted_hand['Hearts'] = $hearts;
-        $sorted_hand['Diamonds'] = $diamonds;
-        $sorted_hand['Clubs'] = $clubs;
+        $sorted_hand['Spades'] = $this->sortCards($spades);
+        $sorted_hand['Hearts'] = $this->sortCards($hearts);
+        $sorted_hand['Diamonds'] = $this->sortCards($diamonds);
+        $sorted_hand['Clubs'] = $this->sortCards($clubs);
 
 
         return $sorted_hand;
 
+    }
+
+    private function sortCards($cards)
+    {
+        usort($cards, function($a, $b) {
+            return $b->value1 <=> $a->value1;
+        });
+
+        return $cards;
     }
 
 }
