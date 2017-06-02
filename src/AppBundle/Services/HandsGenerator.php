@@ -108,15 +108,12 @@ class HandsGenerator
 
             }
 
-
         }
-
 
         $sorted_hand['Spades'] = $this->sortCards($spades);
         $sorted_hand['Hearts'] = $this->sortCards($hearts);
         $sorted_hand['Diamonds'] = $this->sortCards($diamonds);
         $sorted_hand['Clubs'] = $this->sortCards($clubs);
-
 
         return $sorted_hand;
 

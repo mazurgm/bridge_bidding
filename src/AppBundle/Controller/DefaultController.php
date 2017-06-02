@@ -53,7 +53,7 @@ class DefaultController extends Controller
     {
 
         $hands = $this->container->get('HandsGenerator');
-        
+
         return $this->render('default/play.html.twig', array(
             'North_hand' => $hands->getNorthPlayerCards(),
             'East_hand' => $hands->getEastPlayerCards(),
