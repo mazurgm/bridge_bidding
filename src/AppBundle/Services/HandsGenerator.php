@@ -5,34 +5,57 @@
 namespace AppBundle\Services;
 
 
-class HandsGenerator implements \Iterator
+class HandsGenerator
 {
     private $deck = array();
-    private $distributedCards;
-    private $northPlayerCards;
-    private $eastPlayerCards;
-    private $southPlayerCards;
-    private $westPlayerCards;
+    private $distributedCards = array();
+    private $northPlayerCards = array();
+    private $eastPlayerCards = array();
+    private $southPlayerCards = array();
+    private $westPlayerCards = array();
 
     public function __construct($deck)
     {
         $this->deck = $deck;
-        
     }
 
     public function distributeCards()
     {
-        //echo "<pre>";
-       // var_dump($this->deck);
-       // echo "</pre>";
-        $it = new Test;
 
-        foreach($it as $key => $value) {
-            echo "<pre>";
-            var_dump($key, $value);
-            echo "</pre>";
-            echo "\n";
+        foreach($this->deck as $key => $value) {
+
+            switch (true) {
+                case $key < 13:
+                    array_push($this->northPlayerCards, $value);
+                    break;
+                case $key < 26:
+                    array_push($this->eastPlayerCards, $value);
+                    break;
+                case $key < 39:
+                    array_push($this->southPlayerCards, $value);
+                    break;
+                case $key < 52:
+                    array_push($this->westPlayerCards, $value);
+                    break;
+            }
+
         }
+
+        echo "<pre>North";
+        var_dump($this->northPlayerCards);
+        echo "</pre>";
+
+        echo "<pre>East";
+        var_dump($this->eastPlayerCards);
+        echo "</pre>";
+
+        echo "<pre>South";
+        var_dump($this->southPlayerCards);
+        echo "</pre>";
+
+        echo "<pre>West";
+        var_dump($this->westPlayerCards);
+        echo "</pre>";
 
     }
 
@@ -68,60 +91,66 @@ class HandsGenerator implements \Iterator
         return $this->westPlayerCards;
     }
 
-    /**
-     * Return the current element
-     * @return mixed Can return any type.
-     */
-    public function current()
+    private function sortCards($hand)
     {
-        $deck = current($this->deck);
-        echo "current: $deck\n";
-        return $deck;
-    }
+        $spades = array();
+        $hearts = array();
+        $diamonds = array();
+        $clubs = array();
 
-    /**
-     * Move forward to next element
-     * @return void Any returned value is ignored.
-     */
-    public function next()
-    {
-        $deck = next($this->deck);
-        echo "next: $deck\n";
-        return $deck;
-    }
+        $sorted_hand = array(
+            "Spades" => array(),
+            "Hearts" => array(),
+            "Diamonds" => array(),
+            "Clubs" => array(),
+        );
 
-    /**
-     * Return the key of the current element
-     * @return mixed scalar on success, or null on failure.
-     */
-    public function key()
-    {
-        $deck = key($this->deck);
-        echo "key: $deck\n";
-        return $deck;
-    }
+        foreach ($hand as $value){
 
-    /**
-     * Checks if current position is valid
-     * @return boolean The return value will be casted to boolean and then evaluated.
-     * Returns true on success or false on failure.
-     */
-    public function valid()
-    {
-        $key = key($this->deck);
-        $deck = ($key !== NULL && $key !== FALSE);
-        echo "valid: $deck\n";
-        return $deck;
-    }
 
-    /**
-     * Rewind the Iterator to the first element
-     * @return void Any returned value is ignored.
-     */
-    public function rewind()
-    {
-        echo "rewinding\n";
-        reset($this->deck);
+            switch ($value[0]) {
+                case "Spade":
+                    array_push($spades, $value);
+                    break;
+                case "Heart":
+                    array_push($hearts, $value);
+                    break;
+                case "Diamond":
+                    array_push($diamonds, $value);
+                    break;
+                case "Club":
+                    array_push($clubs, $value);
+                    break;
+
+            }
+
+
+        }
+
+        usort($spades, function($a, $b) {
+            return $b[2] <=> $a[2];
+        });
+
+        usort($hearts, function($a, $b) {
+            return $b[2] <=> $a[2];
+        });
+
+        usort($diamonds, function($a, $b) {
+            return $b[2] <=> $a[2];
+        });
+
+        usort($clubs, function($a, $b) {
+            return $b[2] <=> $a[2];
+        });
+
+        $sorted_hand['Spades'] = $spades;
+        $sorted_hand['Hearts'] = $hearts;
+        $sorted_hand['Diamonds'] = $diamonds;
+        $sorted_hand['Clubs'] = $clubs;
+
+
+        return $sorted_hand;
+
     }
 
 }

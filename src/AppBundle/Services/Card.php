@@ -7,11 +7,11 @@ namespace AppBundle\Services;
 
 class Card
 {
-    private $color;
-    private $type;
-    private $value1;
-    private $value2;
-    private $link;
+    public $color;
+    public $type;
+    public $value1;
+    public $value2;
+    public $link;
 
     public function __construct($color, $type, $value1, $value2, $link)
     {

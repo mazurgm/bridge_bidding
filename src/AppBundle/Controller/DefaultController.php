@@ -52,9 +52,6 @@ class DefaultController extends Controller
     public function playAction(Request $request)
     {
 
-        //$deck = $this->container->get('DeckGenerator');
-        //$deck->shuffleDeck();
-
         $hands = $this->container->get('HandsGenerator');
 
         $cards = new Cards();
