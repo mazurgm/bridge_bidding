@@ -69,6 +69,13 @@ swiftmailer:
     password: '%mailer_password%'
     spool: { type: memory }
 
+# app/config/config.yml
+assetic:
+    debug:          '%kernel.debug%'
+    use_controller: false
+    filters:
+        cssrewrite: ~
+
 #FOSUserBundle
 fos_user:
     db_driver: orm # other valid values are 'mongodb' and 'couchdb'
