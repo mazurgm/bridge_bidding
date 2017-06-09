@@ -29,16 +29,6 @@ class DefaultController extends Controller
         */
         // replace this example code with whatever you need
 
-        /*backup cards
-        $cards2 = new Cards2();
-        //var_dump($cards->getDeck());
-        $cards2->shuffleDeck();
-        echo "<pre>";
-        var_dump($cards2->distributeCards());
-        echo "</pre>";
-        */
-
-
 
 
         return $this->render('default/index.html.twig', [
@@ -51,6 +41,17 @@ class DefaultController extends Controller
      */
     public function playAction(Request $request)
     {
+
+        //$userManager = $this->container->get('fos_user.user_manager');
+        //var_dump($userManager);
+
+        /*
+        $user = $this->container->get('security.token_storage')->getToken()->getUser();
+        echo "<pre>";
+        var_dump($user);
+        echo "</pre>";
+
+        */
 
         $hands = $this->container->get('HandsGenerator');
 
