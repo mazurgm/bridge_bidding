@@ -5,8 +5,9 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use AppBundle\Classes\Cards;
 use Symfony\Component\Yaml\Yaml;
+use AppBundle\Entity\Panstwo;
+use AppBundle\Entity\Kontynent;
 
 class DefaultController extends Controller
 {
@@ -52,6 +53,24 @@ class DefaultController extends Controller
         echo "</pre>";
 
         */
+        $manager = $this->getDoctrine()->getManager();
+
+        try {
+            $Kontynent = new Kontynent();
+            $Kontynent->setNazwa('Europa');
+            $manager->persist($Kontynent);
+        }
+        catch (Exception $e) {
+            echo 'Caught exception: ',  $e->getMessage(), "\n";
+        }
+
+            $Panstwo = new Panstwo();
+            $Panstwo->setNazwa('Polska');
+            $Panstwo->setKontynent($Kontynent);
+            $manager->persist($Panstwo);
+
+            $manager->flush();
+
 
         $hands = $this->container->get('HandsGenerator');
 
